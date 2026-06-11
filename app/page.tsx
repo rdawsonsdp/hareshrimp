@@ -94,14 +94,22 @@ export default function Page() {
               ))}
             </div>
           </div>
-          <div className="relative">
-            <div className="absolute inset-0 -z-0 m-auto h-72 w-72 rounded-full bg-brand-primary/40 blur-3xl md:h-96 md:w-96" />
-            <img
-              src={IMG.hero}
-              alt="Haire's shrimp dinner with fries"
-              className="float-dish relative z-10 mx-auto w-full max-w-md drop-shadow-2xl"
-            />
-            <p className="relative z-10 mt-2 text-center font-heading text-2xl text-brand-accent md:-rotate-3">
+          <div className="relative order-first md:order-none">
+            {/* Warm fryer-light glow */}
+            <div className="absolute inset-0 -z-0 m-auto h-80 w-80 rounded-full bg-brand-primary/50 blur-3xl md:h-[30rem] md:w-[30rem]" />
+            <div className="absolute inset-0 -z-0 m-auto h-48 w-64 translate-y-6 rounded-full bg-brand-accent/25 blur-3xl md:h-64 md:w-96" />
+            <div className="float-dish relative z-10">
+              {/* Steam wisps rising off the plate */}
+              <span className="steam left-[32%] top-[2%]" />
+              <span className="steam left-[50%] top-[-4%]" style={{ animationDelay: "1.6s" }} />
+              <span className="steam left-[64%] top-[4%]" style={{ animationDelay: "3.1s" }} />
+              <img
+                src={IMG.hero}
+                alt="A steaming basket of Haire's hand-battered fried shrimp with crinkle fries, cocktail sauce, and coleslaw"
+                className="mx-auto w-full max-w-lg md:max-w-none md:w-[115%] md:-ml-8 [filter:saturate(1.25)_contrast(1.08)_brightness(1.05)_drop-shadow(0_35px_45px_rgba(0,0,0,0.65))] [mask-image:radial-gradient(ellipse_68%_62%_at_center,black_52%,transparent_76%)]"
+              />
+            </div>
+            <p className="relative z-10 mt-3 text-center font-heading text-3xl text-brand-accent md:-rotate-3 md:text-4xl">
               “It&apos;s the bomb!”
             </p>
           </div>
