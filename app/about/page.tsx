@@ -114,21 +114,21 @@ export default function Page() {
       </section>
 
       {/* Batter mix */}
-      <section className="bg-brand-dark py-20 text-white">
+      <section className="bg-brand-primary py-20 text-white">
         <div className="mx-auto grid max-w-6xl items-center gap-12 px-6 md:grid-cols-2">
           <Reveal>
             <p className="font-heading text-sm uppercase tracking-[0.25em] text-brand-accent">
               The secret&apos;s out
             </p>
             <h2 className="mt-3 text-4xl md:text-5xl">Take the recipe home</h2>
-            <p className="mt-6 text-lg leading-relaxed text-white/80">
+            <p className="mt-6 text-lg leading-relaxed text-white/90">
               Haire&apos;s Authentic Louisiana Taste Shrimp Batter &amp; Breading Mix — the same
               kosher-certified blend used in our kitchens — is available for wholesale and retail
               buyers. Mix, batter, fry, enjoy.
             </p>
             <a
               href="/contact"
-              className="mt-8 inline-block rounded-full bg-brand-primary px-8 py-4 text-lg font-bold transition hover:bg-brand-primary-dark"
+              className="mt-8 inline-block rounded-full bg-white px-8 py-4 text-lg font-bold text-brand-primary shadow transition hover:-translate-y-0.5"
             >
               Ask About Wholesale
             </a>

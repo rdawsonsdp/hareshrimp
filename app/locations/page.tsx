@@ -12,12 +12,12 @@ export const metadata = {
 export default function Page() {
   return (
     <>
-      <section className="bg-brand-dark py-16 text-center text-white">
-        <p className="font-heading text-sm uppercase tracking-[0.25em] text-brand-accent">
+      <section className="bg-brand-accent py-16 text-center text-brand-dark">
+        <p className="font-heading text-sm uppercase tracking-[0.25em] text-brand-primary">
           Two spots, one recipe
         </p>
         <h1 className="mt-3 text-5xl md:text-6xl">Our Locations</h1>
-        <p className="mx-auto mt-4 max-w-xl px-6 text-white/70">
+        <p className="mx-auto mt-4 max-w-xl px-6 opacity-75">
           The original shack in Greater Grand Crossing, and our newest spot in the South Loop.
           Call ahead for speedy pickup — your order hits the fryer when you do.
         </p>

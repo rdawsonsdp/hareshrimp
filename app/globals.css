@@ -23,19 +23,26 @@
   --color-brand-secondary: var(--brand-secondary);
   --color-brand-accent: var(--brand-accent);
   --color-brand-dark: var(--brand-dark);
-  --font-heading: var(--font-display), "Georgia", serif;
-  --font-body: var(--font-sans), "Helvetica Neue", sans-serif;
+  --font-heading: "loslana-niu-pro", sans-serif;
+  --font-body: "loslana-niu-pro", sans-serif;
 }
 
 body {
   background: var(--brand-background);
   color: var(--brand-text);
   font-family: var(--font-body);
+  font-weight: 400;
 }
 
 h1, h2, h3, h4 {
   font-family: var(--font-heading);
+  font-weight: 700;
   letter-spacing: 0.01em;
+}
+
+/* Elements opting into the display face get the bold cut */
+.font-heading {
+  font-weight: 700;
 }
 
 ::selection {

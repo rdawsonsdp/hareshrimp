@@ -164,17 +164,17 @@ export default function Page() {
       </section>
 
       {/* ===== Crowd favorites ===== */}
-      <section className="bg-brand-dark py-20 text-white md:py-28">
+      <section className="bg-brand-accent py-20 text-brand-dark md:py-28">
         <div className="mx-auto max-w-6xl px-6">
           <Reveal>
             <div className="flex flex-wrap items-end justify-between gap-4">
               <div>
-                <p className="font-heading text-sm uppercase tracking-[0.25em] text-brand-accent">
+                <p className="font-heading text-sm uppercase tracking-[0.25em] text-brand-primary">
                   Fried to order
                 </p>
                 <h2 className="mt-3 text-4xl md:text-5xl">Crowd Favorites</h2>
               </div>
-              <a href="/menu" className="font-bold text-brand-accent hover:underline">
+              <a href="/menu" className="font-bold text-brand-primary hover:underline">
                 Full menu &amp; prices →
               </a>
             </div>
@@ -184,7 +184,7 @@ export default function Page() {
               <Reveal key={f.name} delay={i * 0.1}>
                 <a
                   href="/menu"
-                  className="group block h-full bg-white/5 p-5 transition duration-300 hover:-translate-y-2 hover:bg-white/10"
+                  className="group block h-full bg-white p-5 shadow-md transition duration-300 hover:-translate-y-2 hover:shadow-2xl"
                 >
                   <div className="overflow-hidden">
                     <img
@@ -195,11 +195,11 @@ export default function Page() {
                   </div>
                   <div className="mt-4 flex items-baseline justify-between gap-2">
                     <h3 className="font-heading text-lg leading-snug">{f.name}</h3>
-                    <span className="whitespace-nowrap rounded-full bg-brand-primary px-3 py-1 text-xs font-bold">
+                    <span className="whitespace-nowrap rounded-full bg-brand-primary px-3 py-1 text-xs font-bold text-white">
                       {f.price}
                     </span>
                   </div>
-                  <p className="mt-2 text-sm leading-relaxed text-white/60">{f.blurb}</p>
+                  <p className="mt-2 text-sm leading-relaxed opacity-70">{f.blurb}</p>
                 </a>
               </Reveal>
             ))}

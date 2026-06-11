@@ -1,19 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import type { Metadata } from "next";
-import { Alfa_Slab_One, Montserrat } from "next/font/google";
 import "./globals.css";
 import { SITE, LOCATIONS, SOCIAL, IMG } from "@/lib/site";
 import { OrderNow } from "@/components/OrderNow";
-
-const display = Alfa_Slab_One({
-  weight: "400",
-  subsets: ["latin"],
-  variable: "--font-display",
-});
-const sans = Montserrat({
-  subsets: ["latin"],
-  variable: "--font-sans",
-});
 
 export const metadata: Metadata = {
   title: {
@@ -59,7 +48,11 @@ function Ticker() {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const [vincennes, southLoop] = LOCATIONS;
   return (
-    <html lang="en" className={`${display.variable} ${sans.variable}`}>
+    <html lang="en">
+      <head>
+        {/* LosLana Niu Pro (400/700) via Adobe Fonts */}
+        <link rel="stylesheet" href="https://use.typekit.net/jmw1nja.css" />
+      </head>
       <body>
         <Ticker />
         <header className="sticky top-0 z-40 border-b border-brand-text/10 bg-brand-background/95 backdrop-blur">
@@ -95,12 +88,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         <main>{children}</main>
 
-        <footer className="bg-brand-dark text-white">
+        <footer className="bg-brand-primary text-white">
           <div className="mx-auto grid max-w-6xl gap-10 px-6 py-14 md:grid-cols-4">
             <div className="md:col-span-2">
               <img src={IMG.logo} alt={SITE.name} className="h-16 w-auto" />
               <p className="mt-4 font-heading text-xl">{SITE.tagline}</p>
-              <p className="mt-2 max-w-sm text-sm text-white/60">
+              <p className="mt-2 max-w-sm text-sm text-white/80">
                 Big Mama&apos;s recipe, fried fresh on Chicago&apos;s South Side since the early
                 1980s. Black-owned, women-led, family-run.
               </p>

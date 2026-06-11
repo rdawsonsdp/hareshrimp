@@ -34,12 +34,12 @@ export default function Page() {
   return (
     <>
       {/* Header */}
-      <section className="bg-brand-dark py-16 text-center text-white">
-        <p className="font-heading text-sm uppercase tracking-[0.25em] text-brand-accent">
+      <section className="bg-brand-accent py-16 text-center text-brand-dark">
+        <p className="font-heading text-sm uppercase tracking-[0.25em] text-brand-primary">
           Hand-battered · Fried to order
         </p>
         <h1 className="mt-3 text-5xl md:text-6xl">The Menu</h1>
-        <p className="mx-auto mt-4 max-w-xl px-6 text-white/70">
+        <p className="mx-auto mt-4 max-w-xl px-6 opacity-75">
           Every order starts the same way it has for forty years: fresh shrimp, Big Mama&apos;s
           batter, hot oil. Pick your location — prices vary slightly between the two.
         </p>
@@ -48,7 +48,7 @@ export default function Page() {
             <a
               key={loc.id}
               href={`#${loc.id}`}
-              className="rounded-full border-2 border-white/30 px-6 py-2.5 text-sm font-bold transition hover:border-brand-accent hover:text-brand-accent"
+              className="rounded-full bg-white px-6 py-2.5 text-sm font-bold text-brand-primary shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
             >
               {loc.short} ↓
             </a>
@@ -107,18 +107,18 @@ export default function Page() {
               ))}
             </div>
             <Reveal>
-              <div className="mt-10 bg-brand-dark p-8 text-center text-white">
+              <div className="mt-10 bg-brand-primary p-8 text-center text-white">
                 <p className="font-heading text-2xl">Ready when you are.</p>
-                <p className="mt-2 text-sm text-white/70">
+                <p className="mt-2 text-sm text-white/80">
                   For speedy pickup and carry-out, call {loc.short}:
                 </p>
                 <a
                   href={loc.phoneHref}
-                  className="mt-4 inline-block rounded-full bg-brand-primary px-8 py-3 text-lg font-bold transition hover:bg-brand-primary-dark"
+                  className="mt-4 inline-block rounded-full bg-white px-8 py-3 text-lg font-bold text-brand-primary shadow transition hover:-translate-y-0.5"
                 >
                   {loc.phone}
                 </a>
-                <div className="mt-4 flex flex-wrap items-center justify-center gap-2 text-xs text-white/50">
+                <div className="mt-4 flex flex-wrap items-center justify-center gap-2 text-xs text-white/70">
                   <span>Or order delivery:</span>
                   {loc.delivery.map((p) => (
                     <a
@@ -126,7 +126,7 @@ export default function Page() {
                       href={p.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="rounded-full border border-white/25 px-3 py-1 font-bold text-white/80 transition hover:border-brand-accent hover:text-brand-accent"
+                      className="rounded-full border border-white/40 px-3 py-1 font-bold text-white transition hover:bg-white hover:text-brand-primary"
                     >
                       {p.name} ↗
                     </a>

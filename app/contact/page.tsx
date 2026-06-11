@@ -11,12 +11,12 @@ export const metadata = {
 export default function Page() {
   return (
     <>
-      <section className="bg-brand-dark py-16 text-center text-white">
-        <p className="font-heading text-sm uppercase tracking-[0.25em] text-brand-accent">
+      <section className="bg-brand-accent py-16 text-center text-brand-dark">
+        <p className="font-heading text-sm uppercase tracking-[0.25em] text-brand-primary">
           We&apos;d love to hear from you
         </p>
         <h1 className="mt-3 text-5xl md:text-6xl">Contact Us</h1>
-        <p className="mx-auto mt-4 max-w-xl px-6 text-white/70">
+        <p className="mx-auto mt-4 max-w-xl px-6 opacity-75">
           The fastest way to get shrimp is to call the shop. For catering, wholesale, or anything
           else, send us a message below.
         </p>
