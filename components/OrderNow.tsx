@@ -36,7 +36,7 @@ export function OrderNow({
             onClick={() => setOpen(false)}
           />
           <div
-            className={`absolute z-50 mt-2 w-80 rounded-2xl border border-brand-text/10 bg-white p-5 text-left text-brand-text shadow-2xl ${
+            className={`absolute z-50 mt-2 w-80 border border-brand-text/10 bg-white p-5 text-left text-brand-text shadow-2xl ${
               panelAlign === "right" ? "right-0" : "left-1/2 -translate-x-1/2"
             }`}
           >

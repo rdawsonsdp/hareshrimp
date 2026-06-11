@@ -29,7 +29,7 @@ export default function Page() {
             <h2 className="font-heading text-2xl">Call the shop</h2>
             <div className="mt-6 space-y-6">
               {LOCATIONS.map((loc) => (
-                <div key={loc.id} className="rounded-2xl border border-brand-text/10 bg-white p-6 shadow-sm">
+                <div key={loc.id} className="border border-brand-text/10 bg-white p-6 shadow-sm">
                   <h3 className="font-heading text-lg">{loc.short}</h3>
                   {loc.address.map((line) => (
                     <p key={line} className="text-sm opacity-70">{line}</p>
@@ -68,7 +68,7 @@ export default function Page() {
                     type="text"
                     name="firstName"
                     required
-                    className="mt-1 w-full rounded-lg border border-brand-text/20 bg-white px-4 py-2.5 outline-none transition focus:border-brand-primary"
+                    className="mt-1 w-full border border-brand-text/20 bg-white px-4 py-2.5 outline-none transition focus:border-brand-primary"
                   />
                 </label>
                 <label className="block">
@@ -77,7 +77,7 @@ export default function Page() {
                     type="text"
                     name="lastName"
                     required
-                    className="mt-1 w-full rounded-lg border border-brand-text/20 bg-white px-4 py-2.5 outline-none transition focus:border-brand-primary"
+                    className="mt-1 w-full border border-brand-text/20 bg-white px-4 py-2.5 outline-none transition focus:border-brand-primary"
                   />
                 </label>
               </div>
@@ -86,7 +86,7 @@ export default function Page() {
                 <input
                   type="tel"
                   name="phone"
-                  className="mt-1 w-full rounded-lg border border-brand-text/20 bg-white px-4 py-2.5 outline-none transition focus:border-brand-primary"
+                  className="mt-1 w-full border border-brand-text/20 bg-white px-4 py-2.5 outline-none transition focus:border-brand-primary"
                 />
               </label>
               <label className="block">
@@ -95,7 +95,7 @@ export default function Page() {
                   type="email"
                   name="email"
                   required
-                  className="mt-1 w-full rounded-lg border border-brand-text/20 bg-white px-4 py-2.5 outline-none transition focus:border-brand-primary"
+                  className="mt-1 w-full border border-brand-text/20 bg-white px-4 py-2.5 outline-none transition focus:border-brand-primary"
                 />
               </label>
               <label className="block">
@@ -105,7 +105,7 @@ export default function Page() {
                   rows={5}
                   required
                   placeholder="Catering inquiry, wholesale order, food truck booking…"
-                  className="mt-1 w-full rounded-lg border border-brand-text/20 bg-white px-4 py-2.5 outline-none transition focus:border-brand-primary"
+                  className="mt-1 w-full border border-brand-text/20 bg-white px-4 py-2.5 outline-none transition focus:border-brand-primary"
                 />
               </label>
               <button

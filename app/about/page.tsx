@@ -78,7 +78,7 @@ export default function Page() {
             <img
               src={IMG.finnie}
               alt="Finnie Haire, founder of Haire's Gulf Shrimp"
-              className="mx-auto w-full max-w-sm rotate-1 rounded-xl border-8 border-white shadow-2xl"
+              className="mx-auto w-full max-w-sm rotate-1 border-8 border-white shadow-2xl"
             />
           </Reveal>
           <Reveal delay={0.15}>
@@ -104,7 +104,7 @@ export default function Page() {
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           {NEWS.map((n, i) => (
             <Reveal key={n.headline} delay={i * 0.1}>
-              <blockquote className="h-full rounded-2xl border border-brand-text/10 bg-white p-7 shadow-sm">
+              <blockquote className="h-full border border-brand-text/10 bg-white p-7 shadow-sm">
                 <span className="font-heading text-3xl text-brand-accent">&ldquo;</span>
                 <p className="font-semibold leading-snug">{n.headline}</p>
               </blockquote>
@@ -148,7 +148,7 @@ export default function Page() {
                 <img
                   src={IMG.food[i]}
                   alt={`Step ${i + 1}: ${step}`}
-                  className="aspect-square w-full rounded-xl object-cover"
+                  className="aspect-square w-full object-cover"
                 />
                 <figcaption className="mt-2 text-center font-heading text-sm text-brand-accent">
                   {i + 1}. {step}

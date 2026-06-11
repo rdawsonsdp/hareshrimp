@@ -42,7 +42,7 @@ export default function Page() {
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           {CATERING_MENU.map((cat, i) => (
             <Reveal key={cat.name} delay={i * 0.1}>
-              <div className="h-full rounded-2xl border border-brand-text/10 bg-white p-7 shadow-sm">
+              <div className="h-full border border-brand-text/10 bg-white p-7 shadow-sm">
                 <h3 className="font-heading text-xl text-brand-primary">{cat.name}</h3>
                 <ul className="mt-4 space-y-3">
                   {cat.items.map((item) => (
@@ -62,7 +62,7 @@ export default function Page() {
         </div>
 
         <Reveal>
-          <div className="mt-14 grid items-center gap-10 rounded-2xl bg-brand-surface p-10 md:grid-cols-2">
+          <div className="mt-14 grid items-center gap-10 bg-brand-surface p-10 md:grid-cols-2">
             <div>
               <h2 className="font-heading text-3xl">The Haire&apos;s Food Truck</h2>
               <p className="mt-4 leading-relaxed opacity-75">
@@ -88,7 +88,7 @@ export default function Page() {
             <img
               src={IMG.storefront}
               alt="Haire's Gulf Shrimp"
-              className="w-full rounded-xl shadow-lg"
+              className="w-full shadow-lg"
             />
           </div>
         </Reveal>

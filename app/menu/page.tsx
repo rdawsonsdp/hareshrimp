@@ -11,7 +11,7 @@ export const metadata = {
 
 function MenuCategoryBlock({ category }: { category: MenuCategory }) {
   return (
-    <div className="break-inside-avoid rounded-2xl border border-brand-text/10 bg-white p-7 shadow-sm">
+    <div className="break-inside-avoid border border-brand-text/10 bg-white p-7 shadow-sm">
       <h3 className="font-heading text-xl text-brand-primary">{category.name}</h3>
       {category.note && <p className="mt-1 text-sm italic opacity-60">{category.note}</p>}
       <ul className="mt-4 space-y-3">
@@ -107,7 +107,7 @@ export default function Page() {
               ))}
             </div>
             <Reveal>
-              <div className="mt-10 rounded-2xl bg-brand-dark p-8 text-center text-white">
+              <div className="mt-10 bg-brand-dark p-8 text-center text-white">
                 <p className="font-heading text-2xl">Ready when you are.</p>
                 <p className="mt-2 text-sm text-white/70">
                   For speedy pickup and carry-out, call {loc.short}:

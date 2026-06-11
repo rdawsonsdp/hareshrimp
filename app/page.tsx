@@ -128,9 +128,9 @@ export default function Page() {
               <img
                 src={IMG.finnie}
                 alt="Finnie Haire, founder of Haire's Gulf Shrimp"
-                className="w-full max-w-sm rotate-[-2deg] rounded-xl border-8 border-white shadow-2xl"
+                className="w-full max-w-sm rotate-[-2deg] border-8 border-white shadow-2xl"
               />
-              <div className="absolute -bottom-5 -right-2 rotate-2 rounded-lg bg-brand-accent px-4 py-2 font-heading text-sm text-brand-dark shadow-lg md:right-8">
+              <div className="absolute -bottom-5 -right-2 rotate-2 bg-brand-accent px-4 py-2 font-heading text-sm text-brand-dark shadow-lg md:right-8">
                 Finnie Haire, founder
               </div>
             </div>
@@ -184,9 +184,9 @@ export default function Page() {
               <Reveal key={f.name} delay={i * 0.1}>
                 <a
                   href="/menu"
-                  className="group block h-full rounded-2xl bg-white/5 p-5 transition duration-300 hover:-translate-y-2 hover:bg-white/10"
+                  className="group block h-full bg-white/5 p-5 transition duration-300 hover:-translate-y-2 hover:bg-white/10"
                 >
-                  <div className="overflow-hidden rounded-xl">
+                  <div className="overflow-hidden">
                     <img
                       src={f.image}
                       alt={f.name}
@@ -218,7 +218,7 @@ export default function Page() {
         <div className="mt-12 grid gap-8 md:grid-cols-2">
           {LOCATIONS.map((loc, i) => (
             <Reveal key={loc.id} delay={i * 0.15}>
-              <div className="h-full rounded-2xl border border-brand-text/10 bg-white p-8 shadow-sm transition hover:shadow-xl">
+              <div className="h-full border border-brand-text/10 bg-white p-8 shadow-sm transition hover:shadow-xl">
                 <div className="flex flex-wrap items-center gap-2">
                   {loc.badge && (
                     <p className="inline-block rounded-full bg-brand-accent/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-brand-secondary">

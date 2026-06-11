@@ -27,7 +27,7 @@ export default function Page() {
         <div className="grid gap-10 md:grid-cols-2">
           {LOCATIONS.map((loc, i) => (
             <Reveal key={loc.id} delay={i * 0.15}>
-              <div className="overflow-hidden rounded-2xl border border-brand-text/10 bg-white shadow-sm transition hover:shadow-xl">
+              <div className="overflow-hidden border border-brand-text/10 bg-white shadow-sm transition hover:shadow-xl">
                 <img
                   src={i === 0 ? IMG.storefront : IMG.dinnerFries}
                   alt={loc.name}
@@ -83,7 +83,7 @@ export default function Page() {
         </div>
 
         <Reveal>
-          <div className="mt-14 rounded-2xl bg-brand-surface p-10 text-center">
+          <div className="mt-14 bg-brand-surface p-10 text-center">
             <h2 className="font-heading text-2xl">Can&apos;t make it to us?</h2>
             <p className="mx-auto mt-3 max-w-xl opacity-75">
               Order delivery through Uber Eats, DoorDash, Grubhub, or Soul Delivered — a community
