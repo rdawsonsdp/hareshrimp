@@ -1,0 +1,57 @@
+{
+  "clientUrl": "https://hairesgulfshrimp.com/",
+  "aspirationalUrl": "(curated reference: Sweetgreen)",
+  "createdAt": "2026-06-11T03:36:04.998Z",
+  "sitemapApproved": true,
+  "decisions": [
+    {
+      "recommendationId": "gap-1",
+      "pageId": "home",
+      "sectionIndex": 0,
+      "variant": "aspirational",
+      "patternType": "hero.full-bleed"
+    },
+    {
+      "recommendationId": "gap-2",
+      "pageId": "menu",
+      "sectionIndex": 1,
+      "variant": "aspirational",
+      "patternType": "products.grid-3col"
+    },
+    {
+      "recommendationId": "gap-3",
+      "pageId": "home",
+      "sectionIndex": 2,
+      "variant": "aspirational",
+      "patternType": "story.split-image"
+    },
+    {
+      "recommendationId": "gap-4",
+      "pageId": "locations",
+      "sectionIndex": 2,
+      "variant": "aspirational",
+      "patternType": "products.grid-3col"
+    },
+    {
+      "recommendationId": "gap-5",
+      "pageId": "contact",
+      "sectionIndex": 0,
+      "variant": "client",
+      "patternType": "contact.split"
+    },
+    {
+      "recommendationId": "gap-6",
+      "pageId": "menu",
+      "sectionIndex": 0,
+      "variant": "client",
+      "patternType": "story.centered"
+    },
+    {
+      "recommendationId": "gap-7",
+      "pageId": "locations",
+      "sectionIndex": 0,
+      "variant": "client",
+      "patternType": "hero.split-card"
+    }
+  ]
+}

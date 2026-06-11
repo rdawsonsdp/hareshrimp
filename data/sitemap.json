@@ -1,0 +1,55 @@
+{
+  "sourceUrl": "(curated reference: Sweetgreen)",
+  "extractedAt": "2026-06-11T03:34:54.640Z",
+  "approved": true,
+  "pages": [
+    {
+      "id": "home",
+      "title": "sweetgreen",
+      "path": "/"
+    },
+    {
+      "id": "menu",
+      "title": "sweetgreen",
+      "path": "/menu"
+    },
+    {
+      "id": "locations",
+      "title": "Sweetgreen Locations",
+      "path": "/locations"
+    },
+    {
+      "id": "contact",
+      "title": "sweetgreen",
+      "path": "/contact"
+    }
+  ],
+  "nav": {
+    "primary": [
+      "Our Menu",
+      "Our Mission",
+      "The Market",
+      "sweetgreen",
+      "Outpost",
+      "Catering",
+      "Locations",
+      "Order",
+      "Download the app"
+    ],
+    "footer": [
+      "iOS",
+      "Android",
+      "Careers",
+      "Investor Relations",
+      "Locations",
+      "Press",
+      "sweetgreen app",
+      "The Hex Bowl",
+      "Instagram",
+      "Twitter",
+      "TikTok",
+      "Spotify"
+    ]
+  },
+  "approvedAt": "2026-06-11T03:36:04.998Z"
+}

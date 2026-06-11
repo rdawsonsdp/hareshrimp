@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+/* ===== Brand tokens (skin layer) =====
+ * Warm shrimp-shack Americana: cream paper, deep crimson, fryer-gold accents.
+ * Change a value here and it propagates everywhere. */
+:root {
+  --brand-background: #fff8ef;
+  --brand-surface: #fdeeda;
+  --brand-text: #221409;
+  --brand-primary: #c8102e;
+  --brand-primary-dark: #99001f;
+  --brand-secondary: #6b4f35;
+  --brand-accent: #f2a33c;
+  --brand-dark: #1b0f07;
+}
+
+@theme inline {
+  --color-brand-background: var(--brand-background);
+  --color-brand-surface: var(--brand-surface);
+  --color-brand-text: var(--brand-text);
+  --color-brand-primary: var(--brand-primary);
+  --color-brand-primary-dark: var(--brand-primary-dark);
+  --color-brand-secondary: var(--brand-secondary);
+  --color-brand-accent: var(--brand-accent);
+  --color-brand-dark: var(--brand-dark);
+  --font-heading: var(--font-display), "Georgia", serif;
+  --font-body: var(--font-sans), "Helvetica Neue", sans-serif;
+}
+
+body {
+  background: var(--brand-background);
+  color: var(--brand-text);
+  font-family: var(--font-body);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  letter-spacing: 0.01em;
+}
+
+::selection {
+  background: var(--brand-accent);
+  color: var(--brand-dark);
+}
+
+/* ===== Engagement: scrolling marquee ticker ===== */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 28s linear infinite;
+}
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+/* ===== Engagement: reveal-on-scroll ===== */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+  transition-delay: var(--reveal-delay, 0s);
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
+  .marquee-track { animation: none; }
+}
+
+/* ===== Engagement: gentle float for hero dish ===== */
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(-2deg); }
+  50% { transform: translateY(-12px) rotate(-1deg); }
+}
+.float-dish {
+  animation: float 6s ease-in-out infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .float-dish { animation: none; }
+}
+
+/* Dotted "menu leader" line between item name and price */
+.menu-leader {
+  flex: 1;
+  border-bottom: 2px dotted color-mix(in srgb, var(--brand-text) 25%, transparent);
+  margin: 0 0.6rem 0.3rem;
+}

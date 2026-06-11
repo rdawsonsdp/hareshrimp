@@ -1,0 +1,139 @@
+{
+  "siteUrl": "https://hairesgulfshrimp.com/",
+  "extractedAt": "2026-06-11T03:32:35.269Z",
+  "palette": [
+    {
+      "hex": "#ffffff",
+      "weight": 0.6968,
+      "role": "background"
+    },
+    {
+      "hex": "#000000",
+      "weight": 0.2837,
+      "role": "text"
+    },
+    {
+      "hex": "#28303d",
+      "weight": 0.0126,
+      "role": "text"
+    },
+    {
+      "hex": "#ff0000",
+      "weight": 0.0069,
+      "role": "accent"
+    }
+  ],
+  "logo": {
+    "src": "https://hairesgulfshrimp.com/wp-content/uploads/2024/11/cropped-Haires-Shrimp-Logo-3.png",
+    "alt": ""
+  },
+  "favicon": "https://hairesgulfshrimp.com/wp-content/uploads/2024/11/Haires-Shrimp-Logo-3-150x150.png",
+  "fonts": [
+    {
+      "family": "Montserrat",
+      "usage": "body",
+      "weight": 601
+    },
+    {
+      "family": "-apple-system",
+      "usage": "heading",
+      "weight": 84
+    }
+  ],
+  "imageLibrary": [
+    {
+      "src": "https://hairesgulfshrimp.com/wp-content/uploads/2024/11/cropped-Haires-Shrimp-Logo-3.png",
+      "alt": "",
+      "width": 150,
+      "height": 187
+    },
+    {
+      "src": "https://hairesgulfshrimp.com/wp-content/uploads/2024/11/Finnie-Haire-2-e1638249367831-239x300.jpg",
+      "alt": "",
+      "width": 239,
+      "height": 300
+    },
+    {
+      "src": "https://hairesgulfshrimp.com/wp-content/uploads/2024/12/facebooklogo.png",
+      "alt": "Facebook",
+      "width": 1112,
+      "height": 1124
+    },
+    {
+      "src": "https://hairesgulfshrimp.com/wp-content/uploads/2024/12/googlelogo.png",
+      "alt": "Google",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "src": "https://hairesgulfshrimp.com/wp-content/uploads/2024/12/foursquarelogo.png",
+      "alt": "Foursquare",
+      "width": 290,
+      "height": 298
+    },
+    {
+      "src": "https://hairesgulfshrimp.com/wp-content/uploads/2024/12/tripadvisorlogo-3.png",
+      "alt": "Trip Advisor",
+      "width": 439,
+      "height": 439
+    },
+    {
+      "src": "https://hairesgulfshrimp.com/wp-content/uploads/2024/12/restaurantjilogo-1.png",
+      "alt": "Restaurantji",
+      "width": 207,
+      "height": 207
+    },
+    {
+      "src": "https://hairesgulfshrimp.com/wp-content/uploads/2024/12/yelp_burst.png",
+      "alt": "Yelp",
+      "width": 200,
+      "height": 225
+    },
+    {
+      "src": "https://hairesgulfshrimp.com/wp-content/uploads/2024/12/UE_Logo_Vertical_RGB_web_GreenBG.svg",
+      "alt": "Uber Eats",
+      "width": 320,
+      "height": 273
+    },
+    {
+      "src": "https://hairesgulfshrimp.com/wp-content/uploads/2024/11/SoulDelivered_revised2-color2-300x273.png",
+      "alt": "",
+      "width": 300,
+      "height": 273
+    },
+    {
+      "src": "https://hairesgulfshrimp.com/wp-content/uploads/2024/11/Finnie-Haire-2-e1638249367831.jpg",
+      "alt": "",
+      "width": 840,
+      "height": 1055
+    },
+    {
+      "src": "https://hairesgulfshrimp.com/wp-content/uploads/2024/12/HairesGulfShrimp_KMendiola-4-e1733711051753.jpg",
+      "alt": "",
+      "width": 600,
+      "height": 536
+    },
+    {
+      "src": "https://hairesgulfshrimp.com/wp-content/uploads/2025/03/haires-product-768x1208.png",
+      "alt": "",
+      "width": 749,
+      "height": 1179
+    },
+    {
+      "src": "https://hairesgulfshrimp.com/wp-content/uploads/2025/03/IMG_7512-e1741668480816-300x300.png",
+      "alt": ""
+    },
+    {
+      "src": "https://hairesgulfshrimp.com/wp-content/uploads/2025/03/IMG_7511-e1741668656794-300x300.png",
+      "alt": ""
+    },
+    {
+      "src": "https://hairesgulfshrimp.com/wp-content/uploads/2025/03/IMG_7508-e1741668772609-300x300.png",
+      "alt": ""
+    },
+    {
+      "src": "https://hairesgulfshrimp.com/wp-content/uploads/2025/03/IMG_7506-e1741668860746-300x300.png",
+      "alt": ""
+    }
+  ]
+}

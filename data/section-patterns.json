@@ -1,0 +1,114 @@
+{
+  "sourceUrl": "(curated reference: Sweetgreen)",
+  "extractedAt": "2026-06-11T03:34:54.640Z",
+  "pages": [
+    {
+      "pageId": "home",
+      "sections": [
+        {
+          "type": "hero.full-bleed",
+          "description": "Full-bleed hero with persistent top nav bar, brand wordmark centered, primary CTA pill at top-right, overlaid headline and single dominant CTA button bottom-left",
+          "liftFactors": [
+            "valueProposition",
+            "urgency",
+            "clarity"
+          ]
+        },
+        {
+          "type": "products.row-scroll",
+          "description": "Tabbed category selector above a two-up product card row, each card with image, title, descriptive text, and inline text CTA link",
+          "liftFactors": [
+            "relevance",
+            "clarity"
+          ]
+        },
+        {
+          "type": "story.split-image",
+          "description": "Two-column band with large left-aligned headline and sub-section text blocks paired with a supporting image on the right",
+          "liftFactors": [
+            "valueProposition",
+            "relevance"
+          ]
+        }
+      ]
+    },
+    {
+      "pageId": "menu",
+      "sections": [
+        {
+          "type": "story.centered",
+          "description": "Large centered serif statement headline anchoring the top of the page",
+          "liftFactors": [
+            "valueProposition"
+          ]
+        },
+        {
+          "type": "products.grid-3col",
+          "description": "Section label followed by a three-column product card grid; cards show image with badge, title, ingredient text, and nutrition metric row",
+          "liftFactors": [
+            "relevance",
+            "clarity"
+          ]
+        },
+        {
+          "type": "products.grid-3col",
+          "description": "Additional categorized three-column product card grid continuing with badges, titles, descriptions and metric rows",
+          "liftFactors": [
+            "relevance",
+            "clarity"
+          ]
+        }
+      ]
+    },
+    {
+      "pageId": "locations",
+      "sections": [
+        {
+          "type": "hero.split-card",
+          "description": "Full-bleed image hero with left headline, center supporting paragraph, and right outlined secondary CTA pill",
+          "liftFactors": [
+            "valueProposition",
+            "relevance"
+          ]
+        },
+        {
+          "type": "generic.text",
+          "description": "Section title row with a state filter dropdown selector aligned right for jump-to navigation",
+          "liftFactors": [
+            "clarity",
+            "relevance"
+          ]
+        },
+        {
+          "type": "products.grid-3col",
+          "description": "Region-grouped grid of location cards, each with name, address, hours, and dual View/Order action buttons",
+          "liftFactors": [
+            "relevance",
+            "clarity"
+          ]
+        }
+      ]
+    },
+    {
+      "pageId": "contact",
+      "sections": [
+        {
+          "type": "contact.split",
+          "description": "Modal support chat overlay with branded header, message thread area, automated greeting bubble, consent disclosure text, and message input field, layered over the underlying hero page",
+          "liftFactors": [
+            "anxiety",
+            "clarity"
+          ]
+        },
+        {
+          "type": "hero.full-bleed",
+          "description": "Background full-bleed hero with overlaid headline and dominant CTA button bottom-left, partially dimmed beneath the chat modal",
+          "liftFactors": [
+            "valueProposition",
+            "urgency"
+          ]
+        }
+      ]
+    }
+  ]
+}
