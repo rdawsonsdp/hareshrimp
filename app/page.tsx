@@ -40,16 +40,24 @@ export default function Page() {
   return (
     <>
       {/* ===== Hero ===== */}
-      <section className="relative overflow-hidden bg-brand-dark text-white">
-        <div
-          className="pointer-events-none absolute inset-0 opacity-[0.07]"
-          style={{
-            backgroundImage: "radial-gradient(circle at 1px 1px, #fff 1px, transparent 0)",
-            backgroundSize: "22px 22px",
-          }}
+      <section className="relative flex min-h-[92vh] items-center overflow-hidden bg-brand-dark text-white">
+        {/* The food IS the backdrop — real plate, shot on the counter */}
+        <img
+          src={IMG.dinnerFries}
+          alt="A fresh basket of Haire's hand-battered fried shrimp and crinkle fries on the counter"
+          className="hero-zoom absolute inset-0 h-full w-full object-cover object-[68%_center] [filter:saturate(1.25)_contrast(1.18)_brightness(0.9)]"
         />
-        <div className="mx-auto grid max-w-6xl items-center gap-10 px-6 py-16 md:grid-cols-2 md:py-24">
-          <div>
+        {/* Warm grade + vignette: keeps it a scene, not a cut-out */}
+        <div className="absolute inset-0 bg-gradient-to-r from-brand-dark via-brand-dark/75 to-transparent" />
+        <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-brand-dark/80 to-transparent" />
+        <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-brand-dark/90 to-transparent" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_40%,rgba(27,15,7,0.6)_100%)]" />
+        {/* Steam drifting off the plate */}
+        <span className="steam right-[14%] top-[38%] hidden md:block" />
+        <span className="steam right-[26%] top-[46%] hidden md:block" style={{ animationDelay: "2.2s" }} />
+        <span className="steam right-[20%] top-[30%] hidden md:block" style={{ animationDelay: "3.6s" }} />
+        <div className="relative z-10 mx-auto w-full max-w-6xl px-6 py-24 md:py-32">
+          <div className="max-w-xl">
             <div className="flex flex-wrap items-center gap-3">
               <p className="inline-block rounded-full border border-brand-accent/50 px-4 py-1 text-xs font-bold uppercase tracking-widest text-brand-accent">
                 Chicago&apos;s South Side · Since the early 1980s
@@ -94,26 +102,10 @@ export default function Page() {
               ))}
             </div>
           </div>
-          <div className="relative order-first md:order-none">
-            {/* Warm fryer-light glow */}
-            <div className="absolute inset-0 -z-0 m-auto h-80 w-80 rounded-full bg-brand-primary/50 blur-3xl md:h-[30rem] md:w-[30rem]" />
-            <div className="absolute inset-0 -z-0 m-auto h-48 w-64 translate-y-6 rounded-full bg-brand-accent/25 blur-3xl md:h-64 md:w-96" />
-            <div className="float-dish relative z-10">
-              {/* Steam wisps rising off the plate */}
-              <span className="steam left-[32%] top-[2%]" />
-              <span className="steam left-[50%] top-[-4%]" style={{ animationDelay: "1.6s" }} />
-              <span className="steam left-[64%] top-[4%]" style={{ animationDelay: "3.1s" }} />
-              <img
-                src={IMG.hero}
-                alt="A steaming basket of Haire's hand-battered fried shrimp with crinkle fries, cocktail sauce, and coleslaw"
-                className="mx-auto w-full max-w-lg md:max-w-none md:w-[115%] md:-ml-8 [filter:saturate(1.25)_contrast(1.08)_brightness(1.05)_drop-shadow(0_35px_45px_rgba(0,0,0,0.65))] [mask-image:radial-gradient(ellipse_68%_62%_at_center,black_52%,transparent_76%)]"
-              />
-            </div>
-            <p className="relative z-10 mt-3 text-center font-heading text-3xl text-brand-accent md:-rotate-3 md:text-4xl">
-              “It&apos;s the bomb!”
-            </p>
-          </div>
         </div>
+        <p className="absolute bottom-14 right-12 z-10 hidden -rotate-6 font-heading text-4xl text-brand-accent drop-shadow-[0_4px_12px_rgba(0,0,0,0.8)] md:block">
+          “It&apos;s the bomb!”
+        </p>
       </section>
 
       {/* ===== Ratings strip ===== */}

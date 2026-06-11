@@ -82,6 +82,15 @@ h1, h2, h3, h4 {
   animation: float 6s ease-in-out infinite;
 }
 
+/* ===== Engagement: slow Ken Burns zoom on the hero backdrop ===== */
+@keyframes hero-zoom {
+  from { transform: scale(1); }
+  to { transform: scale(1.12); }
+}
+.hero-zoom {
+  animation: hero-zoom 20s ease-in-out infinite alternate;
+}
+
 /* ===== Engagement: steam rising off the hero plate ===== */
 @keyframes steam-rise {
   0% { transform: translateY(10px) translateX(0) scale(0.6); opacity: 0; }
@@ -102,6 +111,7 @@ h1, h2, h3, h4 {
 @media (prefers-reduced-motion: reduce) {
   .float-dish { animation: none; }
   .steam { animation: none; opacity: 0; }
+  .hero-zoom { animation: none; }
 }
 
 /* Dotted "menu leader" line between item name and price */
